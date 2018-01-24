@@ -1,0 +1,60 @@
+#Problem 1
+y1 = int(17)
+y2 = str(17)
+y3 = float(17)
+y4 = 17==16
+
+print(y1)
+print(type(y1))
+print(y2)
+print(type(y2))
+print(y3)
+print(type(y3))
+print(y4)
+print(type(y4))
+
+text = 'The value of x is ' + y2 +'.'
+print(text)
+
+#Problem 2
+text = "I"+" "+"love"+" "+"learning"+" "+"how"+" "+"to"+" "+"code"+"!"
+print(text)
+
+#Problem 3
+def iterative(n):
+    sum = 0
+    for i in range(0,n+1):
+        sum += i
+    return sum
+def recursive(n):
+    if n==1:
+        return n
+    else:
+        return n+recursive(n-1)
+n=100
+print(iterative(n))
+print(recursive(n))
+
+#Problem 4
+yours = ['Yale','MIT','Berkeley']
+mine = ['Creighton','Pomona','Yale']
+ours1 = mine + yours
+ours2 = []
+ours2.append(mine)
+ours2.append(yours)
+
+print(ours1)
+print(ours2)
+yours[1]="UCLA"
+print(ours1)
+print(ours2)
+
+#1. ours1 is a list containing 6 elements. ours2 is a list containing two elements, each of which is a list of 3 elements.
+#2. ours1 is a unique list/object, so modifications to yours list do not affect it. Ours2 is generated from .append commands based on the yours list, which IS affected by modifications made to the original list.
+
+#Problem 5
+year = {1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',7:'July',8:'August',9:'September',10:'October',11:'November',12:'December'}
+print('The sixth month is ' + year[6] + '.')
+print(year[2] + " is month 2.")
+
+
